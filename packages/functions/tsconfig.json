@@ -1,0 +1,22 @@
+{
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "compilerOptions": {
+    "verbatimModuleSyntax": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@app/drizzle": [
+        "../core/src/drizzle"
+      ],
+      "@app/replicache": [
+        "../core/src/replicache"
+      ],
+      "@app/api": [
+        "../core/src/api"
+      ]
+    }
+  }
+}
